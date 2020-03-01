@@ -1,22 +1,30 @@
-# -*- coding: utf-8 -*-
+def main():
+    temp3 = "74 874 9883 73 9 73646 774"
 
-
-# 도전 2. 형변환. 문자열을 정수로 바꾸기.
-# 문자열 "3"을 정수 3으로 바꾸시오. 구글 검색
-# temp2 = "3"
-
-# 도전 3. 문자열에서 가장 큰 수를 찾으시오.
 # a. 문자열 자르기 --> 리스트를 얻게 됨.
+    lst = temp3.split(" ")  # ["74", "874", "9883", "73", "9", "73646", "774"
+    print(type(lst), lst)  # ['74', '874', '9883', '73', '9', '73646', '774']
+
+    print(lst[0], type(lst[0]))  # 74, <class 'str'>
+    print(lst[1], type(lst[1]))  # 874, <class 'str'>
+    print(lst[2], type(lst[2]))  # 9883, <class 'str'>
+
 # b. 문자열을 정수 리스트로 만든다.
+    lst[0] = int(lst[0])
+    print(lst[0], type(lst[0]))  # 74, <class 'int'>
+
+    for i in range(0, len(lst), 1):
+        lst[i] = int(lst[i])
+    print(type(lst), lst)  # 정수리스트 [9, 73, 74, 774, 874, 9883, 73646]
+
 # c. 정수리스트를 오름차순 정렬하시오
+    lst = sorted(lst)
+    print(lst)
 # d. 정수리스트에서 최대값을 찾는다.
-temp3 = "74 874 9883 73 9 73646 774"
-array1 = temp3.strip().split(" ")
-print(array1)  # ['74', '874', '9883', '73', '9', '73646', '774']
+    lst[len(lst)-1]  # 마지막방에 있는 값. len(lst) -1
+    print(lst)
+    lst = max(lst)
+    print(lst)  # 73746
 
-array2 = []
-for n in array1:
-    n = int(n)
-    array2.append(n)
-
-print(array2)  # [74, 874, 9883, 73, 9, 73646, 774]
+if __name__ == "__main__" :
+    main()
