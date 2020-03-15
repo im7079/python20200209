@@ -11,3 +11,24 @@
 
 
 # 코딩 하기 
+class Parent( object ):
+    def __init__(self):
+        self.__value = "상속부모변수"
+    def test(self):
+        print("Parent 클래스의 test()메서드 입니다.")
+    def getValue(self):
+        return self.__value
+
+class Child( Parent ):
+    def __init__(self):
+        self.__value = "자식변수"
+    def getValue(self):
+        return self.__value
+
+#상속 설정하는 방법 클래스 이름(부모클래스명) 넣어주면 된다.
+
+child = Child()
+child.test()
+val = child.getValue()
+print(val)
+

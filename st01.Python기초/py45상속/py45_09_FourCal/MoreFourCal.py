@@ -16,3 +16,15 @@
 
 
 # 코딩 하기 
+import FourCal
+
+class MoreFourCal(FourCal. FourCal):
+    def __init__( self, first = 0, second = 0 ):
+        FourCal. FourCal.__init__(self, first, second)
+        pass
+
+    def pow(self) :
+        result = super.getFirst()**2
+        return result
+
+    

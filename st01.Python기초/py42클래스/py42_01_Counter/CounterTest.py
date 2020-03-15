@@ -8,3 +8,17 @@
 #    main()
 
 # 코딩 하기 
+import Counter
+def main():
+    instance1 = Counter.Counter()
+    print(instance1.__str__())
+    
+    instance1.increment() #1
+    instance1.increment() #2
+
+    curval = instance1.getCount()
+    print("curval", curval)
+    print(instance1.__str__())
+
+if __name__ == "__main__":
+    main()

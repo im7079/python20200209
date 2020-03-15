@@ -5,3 +5,11 @@
 #################################
 
 # 모듈을 읽어 들입니다.
+import time
+import datetime
+
+print(time.time())
+
+print(datetime.datetime.now(), "지금부터 5초 동안 정지")
+time.sleep(5)
+print(datetime.datetime.now(), "프로그램을 종료합니다.")

@@ -16,3 +16,38 @@
 
 
 # 코딩 하기 
+class FourCal(): #클래스 정의(선언)
+    def __init__( self, first=0, second=0 ): #생성자 선언
+        self.__first = first#비공개 변수 선언
+        self.__second = second
+
+    def Add(self):
+        result = self.__first + self.__second
+        return result
+
+    def Minus(self):
+        result = self.__first - self.__second
+        return result
+
+    def Mul(self):
+        result = self.__first * self.__second
+        return result
+
+    def Div(self):
+        result = self.__first / self.__second
+        return result
+
+# self. __first 변수의 getter 메서드 만들기
+# 메서드 이름을 만들 때 get + 변수명의 첫글자는 대분자로, 나머지는 소문자로.
+    def getFirst(self):
+        return self.__first
+    def getSecond(self):
+        return self.__second
+# self. __first 변수의 setter 메서드 만들기
+# setter 메서드의 목적: 비공개 변수값을 바꾼다.
+# 메서드 이름을 만들 때 set + 변수명의 첫글자는 대분자로, 나머지는 소문자로.
+    def setFirst(self, first):
+        self.__first = first
+
+    def setSecond(self, second):
+        self.__second = second

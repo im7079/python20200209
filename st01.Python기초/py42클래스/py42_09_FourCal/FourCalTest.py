@@ -1,11 +1,30 @@
 
-# 작업 순서 
+# 작업 순서
 # 1. 모듈 또는 클래스 import
-# 2. main() 메서드 만들기 
+# 2. main() 메서드 만들기
 #     인스턴스 생성
 # 3. 이 모듈이 단독으로 사용되면 main()를 호출하라.
 #    if __name__ == "__main__":
 #    main()
 
-# 코딩 하기 
+# 코딩 하기
 
+import FourCal
+import MoreFourCal
+
+def main():
+    c1 = FourCal.FourCal(2, 4)
+    c2 = MoreFourCal.MoreFourCal(5,7)
+    val = c2.pow
+    print(val)
+
+    val = c2. add()
+    print("Add =", val.Add())
+    print("Add =", c1.Add())
+    print("Minus =", c1.Minus())
+    print("Mul =", c1.Mul())
+    print("Div =", c1.Div())
+
+
+if __name__ == "__main__":
+    main()

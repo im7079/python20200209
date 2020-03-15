@@ -9,3 +9,24 @@
 
 # 코딩 하기 
 
+
+import FourCal
+import MoreFourCal
+
+def main():
+    c1 = FourCal.FourCal(2, 4)
+    c2 = MoreFourCal.MoreFourCal(5,7)
+    val = c2.pow
+    print(val)
+
+    val = c2. add()
+    
+    print("Add =", val.Add())
+    print("Add =", c1.Add())
+    print("Minus =", c1.Minus())
+    print("Mul =", c1.Mul())
+    print("Div =", c1.Div())
+
+
+if __name__ == "__main__":
+    main()
